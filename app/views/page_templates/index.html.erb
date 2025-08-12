@@ -1,0 +1,47 @@
+<p>Hello, world</p>
+
+
+
+
+<main class="main-container">
+
+  <div class="image-row">
+    <img src="https://media.licdn.com/dms/image/v2/C5603AQGLvP6qXW85Tw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1560537350042?e=1756944000&v=beta&t=XHU3gw5MQ2z3EqtgT_zjSjmPAku0_Be9c420ulCEdvQ" alt="victor profile picture" class="avatar-image">
+  </div>
+
+  <div class="name-row">
+    <h1>Victor Kung</h1>
+  </div>
+
+  <div class="social-icons-row">
+    <a href="https://github.com/victorkung" target="_blank">
+      <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/victorkung/" target="_blank">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+
+    <a href="https://www.instagram.com/realvictorkung" target="_blank">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://www.x.com/realvictorkung" target="_blank">
+      <i class="fa-brands fa-x-twitter"></i>
+    </a>
+  </div>
+
+  <div class="links-row">
+
+    <% @list_of_items.each do |the_item| %>
+      <div class="item">
+        <img src="<%= the_item.thumbnail_url %>" class="thumbnail">
+        <a href="<%= the_item.link_url %>" target="_blank">
+          <%= the_item.link_description %>
+        </a>
+      </div>
+    <% end %>
+
+  </div> 
+
+</main>

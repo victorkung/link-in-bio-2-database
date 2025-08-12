@@ -20,6 +20,88 @@
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
+    <style>
+      /* * {
+        border: 1px red dashed;
+      } */
+
+      html, body {
+        min-height: 100%;
+      }
+
+      body {
+        color: white;
+        padding: 50px 0px;
+        background: linear-gradient(0deg, #000000, #121724, #1a2744, #1f3866, #234989, #235caf, #206fd6, #1783ff);
+        font-family:"Funnel Sans", Arial, sans-serif
+      }
+
+      a { 
+        text-decoration: none;
+      }
+
+      .main-container {
+        max-width: 650px;
+        margin: auto;
+      }
+
+      /* Consistent Spacing b/w Each Section */
+      .image-row, .name-row, .social-icons-row {
+        margin-bottom: 30px;
+      }
+
+      .image-row, .name-row {
+        text-align: center;
+      }
+
+      .social-icons-row {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .social-icons-row a {
+        color: white;
+        font-size: 30px;
+      }
+
+      .avatar-image {
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+      }
+
+      .item { 
+        display: flex;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 20px;
+        padding: 5px;
+        border-radius: 20px;
+        box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
+      }
+
+      .item a {
+        color: black;
+        text-align: center;
+        flex-grow: 1;
+      }
+
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+      }
+    </style>
+
   </head>
 
   <body>
